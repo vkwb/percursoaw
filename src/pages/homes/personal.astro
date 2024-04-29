@@ -12,7 +12,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'Personal Homepage Demo',
+  title: 'Malu Aguiar',
 };
 ---
 
@@ -43,14 +43,18 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
+    title="Malu Aguiar"
     tagline="Personal Web Demo"
-    actions={[{ variant: "primary", text: 'Hire me', href: getPermalink("/contact#form") }]}
+    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree
-      from New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into
-      captivating realities.
+      Olá! É um prazer ter você por aqui e quero agradecer sua visita. Sou Malu Aguiar, a pessoa por trás do Percurso.
+      Eu sou inquieta e multipotencial, esquizoanalista, terapeuta integrativa informada sobre trauma, escritora e
+      artista apaixonada pela jornada da mulher no mundo em busca de sua autodescoberta, liberdade e conexão consigo
+      mesma. <br />
+      <br />
+      E quero compartilhar um pouco da minha própria jornada com você, para inspirá-la a olhar para sua própria biografia
+      e afirmar sua autenticidade no mundo.
     </Fragment>
   </Hero>
 
@@ -92,18 +96,28 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Minha Jornada Pessoal</h2>
       <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        Eu sempre fui uma pessoa inquieta, intensa e apaixonada pelo conhecimento, interessada em muitos temas
+        diferentes. Sou a caçula de uma grande família de mulheres e mãe de uma jovem na casa dos 30 anos e estava
+        sempre muito atenta às suas necessidades. E isso me ajudou a conhecer profundamente os desafios que toda mulher
+        enfrenta na busca pela afirmação da sua singularidade, liberdade e autonomia.
       </p>
       <br />
       <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
+        Minha trajetória como terapeuta integrativa começou assim que eu decidi deixar o mercado de trabalho e buscar
+        uma profissão na qual eu pudesse me dedicar a acompanhar o crescimento da minha filha. Eu trabalhava na área de
+        Recursos Humanos na indústria e já vinha estudando arte, Yoga e temas ligados ao autoconhecimento e à
+        consciência.
       </p>
       <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
+      <p>
+        Com esses conhecimentos, eu fundei e dirigi a escola de artes Kandinsky, que trazia uma abordagem terapêutica e
+        o desejo de tirar a arte de seu posto elitista e trazê-la para uma prática e fruição acessíveis. Essa escola
+        impactou a vida de crianças, jovens e adultos por 5 anos.
+      </p>
+      <br />
+      <p></p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -382,11 +396,13 @@ const metadata = {
   <CallToAction
     title="Let's create together"
     subtitle="Ready to transform your vision into captivating designs?"
-    actions={[{
-      variant:"primary",
-      text: 'Hire me',
-      href: '/',
-    }]}
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hire me',
+        href: '/',
+      },
+    ]}
   />
 
   <!-- BlogLatestPost Widget **************** -->
